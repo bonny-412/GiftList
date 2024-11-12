@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, OnInit, Output, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-loader',
@@ -8,6 +8,8 @@ import { AfterViewInit, Component, OnInit, Renderer2 } from '@angular/core';
   styleUrl: './loader.component.css'
 })
 export class LoaderComponent implements OnInit, AfterViewInit {
+  @Output() endLoader = new EventEmitter<boolean>()
+
   constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {}
@@ -28,6 +30,8 @@ export class LoaderComponent implements OnInit, AfterViewInit {
       if (body) {
         this.renderer.setStyle(body, 'overflow', 'visible');
       }
+
+      this.endLoader.emit(true);
     }, 1500);
   }
 

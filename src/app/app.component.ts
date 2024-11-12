@@ -13,9 +13,5 @@ import { ButtonSoundComponent } from './components/button-sound/button-sound.com
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'GiftList';
-  
-  
-
 
 }

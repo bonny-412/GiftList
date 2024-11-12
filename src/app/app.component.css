@@ -239,10 +239,3 @@ header .header-content .header-content-inner {
     color: var(--color-red);
 }
 
-.santacap {
-    position: absolute;
-    top: -0.5em; /* Regola per l'altezza sopra la "L" */
-    left: 0.3em; /* Regola per centrare sopra la "L" */
-    width: 0.7em; /* Imposta una larghezza responsiva rispetto al testo */
-    height: auto;
-}
