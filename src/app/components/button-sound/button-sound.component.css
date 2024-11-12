@@ -1,0 +1,26 @@
+/* app.component.css */
+.bell-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;   /* Dimensione del bottone */
+    height: 60px;  /* Dimensione del bottone */
+    border-radius: 50%;  /* Rende il bottone tondo */
+    background-color: #179d82;  /* Colore di sfondo del bottone */
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.bell-button img {
+    width: 40px;  /* Dimensione dell'icona della campana */
+    height: 40px; /* Dimensione dell'icona della campana */
+}
+
+.bell-button:hover {
+    background-color: #0c5445;  /* Colore quando l'utente passa sopra il bottone */
+}

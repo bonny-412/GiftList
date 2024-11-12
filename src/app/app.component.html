@@ -1,11 +1,4 @@
-<!-- LOADER -->
-<div id="preloader">
-  <div class="loader">
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
-</div><!-- end loader -->
-<!-- END LOADER -->
+<app-loader/>
 
 <div class="illustration">
 	<div class="i-large"></div>
@@ -44,9 +37,6 @@
         </div>
     </div>
   </div>
-  <!-- <div class="audioembed">
-    <audio controls="true" autoplay="true" src="audio.mp3"  onloadeddata="setLowVolume()" id="audio1">
-  </div> -->
 </header>
 
 <section id="faq" class="flex flex-col gap-3">
@@ -62,6 +52,4 @@
   </div>
 </footer>
 
-<button class="bell-button" (click)="clickPlaySound()" title="Play/Pause">
-  <img src="../assets/images/bell.svg" alt="Campana" class="{{this.isAudioOn ? 'animate-bounce' : ''}}"/>
-</button>
+<app-button-sound/>
