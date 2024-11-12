@@ -15,3 +15,11 @@ transition: transform 0.3s ease-in-out; /* Transizione fluida per l'effetto di z
 .product-card:hover .product-image {
 transform: scale(1.2); /* Ingrandisci l'immagine al 120% */
 }
+
+.button-card {
+    background-color: var(--color-red);
+}
+
+.button-card:hover {
+    background-color: var(--color-red-dark);
+}
