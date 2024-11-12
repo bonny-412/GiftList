@@ -1,0 +1,67 @@
+<!-- LOADER -->
+<div id="preloader">
+  <div class="loader">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</div><!-- end loader -->
+<!-- END LOADER -->
+
+<div class="illustration">
+	<div class="i-large"></div>
+	<div class="i-medium"></div>
+	<div class="i-small"></div>
+</div>
+
+<header>
+  <div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- Colonna sinistra: PNG -->
+      <div class="flex justify-center items-center w-full order-2 lg:order-1">
+        <img class="max-w-full w-48 lg:w-full h-auto" alt="Santa Image" src="../assets/images/santa2-min.png">
+      </div>
+
+      <!-- Colonna destra: Frasi -->
+        <div class="header-content w-full items-center flex flex-col justify-center order-1 lg:order-2">
+          <div class="header-content-inner w-full flex flex-col items-start gap-3">
+            <div class="flex flex-row items-center justify-center lg:justify-start w-full">
+              <h1 class="text-6xl lg:text-7xl font-bold mb-4 relative font-christmas">
+                <span class="cap-wrapper">
+                  <img class="santacap" src="../assets/images/santa-cap.png" alt="">
+                </span>
+                Lista regali <span class="primary-color">Bonny</span>
+              </h1>
+            </div>
+            <div class="flex flex-row justify-center lg:justify-start w-full">
+              <h4 class="lg:text-3xl md:text-2xl text-xl">Scorri, scegli, sorprendi… e rendi Bonny super felice!</h4>
+            </div>
+            <div class="flex lg:flex-row flex-col justify-between w-full items-center">
+              <app-countdown [isChristmas]="true" />
+              <app-countdown [isChristmas]="false" />
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- <div class="audioembed">
+    <audio controls="true" autoplay="true" src="audio.mp3"  onloadeddata="setLowVolume()" id="audio1">
+  </div> -->
+</header>
+
+<section id="faq" class="flex flex-col gap-3">
+  <div class="flex flex-row w-full justify-center items-center relative z-10 mb-4">
+    <h1 class="text-6xl font-bold font-christmas">Lista</h1>
+  </div>
+  <app-gifts></app-gifts>
+</section>
+
+<footer>
+  <div class="flex flex-row justify-center items-center relative z-10 text-white">
+      <p>Powered by <a href="https://abonaiuti.netlify.app/" target="_blank"><b>Andrea Bonaiuti</b></a></p>
+  </div>
+</footer>
+
+<button class="bell-button" (click)="clickPlaySound()" title="Play/Pause">
+  <img src="../assets/images/bell.svg" alt="Campana" class="{{this.isAudioOn ? 'animate-bounce' : ''}}"/>
+</button>

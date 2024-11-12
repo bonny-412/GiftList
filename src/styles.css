@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--color-red: #F81D3D;
+	--color-red-dark: #D61935;
+}
+
+body,html {
+	height:100%;
+	width:100%
+}
+body {
+	font-family:Muli,Helvetica,Arial,sans-serif;
+	webkit-tap-highlight-color:#222;
+    color:#999;
+    margin: 0px;;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 8px;
+	background-color: #2F2C3D;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-red);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	cursor: pointer;
+	background-color: var(--color-red-dark);
+}
+
+.font-christmas {
+    font-family: Great Vibes;
+}

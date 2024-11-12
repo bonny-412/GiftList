@@ -1,0 +1,24 @@
+@if(giftBean) {
+    <div class="relative cursor-pointer flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md product-card hover:cursor-pointer">
+        <a href="{{giftBean.url}}" target="_blank">
+            <span class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl p-3 bg-slate-100">
+                <img class="object-cover product-image" src="../../../assets/images-gift/{{giftBean.img}}" alt="Immagine regalo" />
+            </span>
+            <div class="mt-4 px-5 pb-5">
+                <span>
+                    <h5 class="text-xl tracking-tight text-slate-900">{{giftBean.title}}</h5>
+                </span>
+                <div class="mt-2 mb-5 flex items-center justify-between">
+                    <p class="text-sm"><b class="text-base">Colore:</b> {{giftBean.color}}</p>
+                    <p class="text-sm"><b class="text-base">Taglia:</b> {{giftBean.size}}</p>
+                </div>
+                <span class="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    Visualizza
+                    <svg class="mr-2 h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </div>
+        </a>
+    </div>
+}

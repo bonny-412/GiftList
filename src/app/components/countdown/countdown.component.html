@@ -1,0 +1,25 @@
+<div class="countdown-container p-3 text-center text-white rounded-lg border-1">
+  <!-- <h1 class="text-xl font-bold mb-6">Countdown per Natale!</h1> -->
+  <div class="flex justify-center items-center p-2">
+    <img class="w-20 h-auto" src="{{urlIconCountdown}}" alt="Icona" />
+  </div>
+
+  <div class="countdown grid grid-cols-4 gap-4">
+    <div class="time-block p-1 bg-white bg-opacity-20 rounded-lg shadow-lg">
+      <div class="time-number text-xl md:text-2xl lg:text-3xl font-bold">{{ days }}</div>
+      <div class="time-label mt-2 text-sm md:text-base lg:text-lg">Giorni</div>
+    </div>
+    <div class="time-block p-1 bg-white bg-opacity-20 rounded-lg shadow-lg">
+      <div class="time-number text-xl md:text-2xl lg:text-3xl font-bold">{{ hours }}</div>
+      <div class="time-label mt-2 text-sm md:text-base lg:text-lg">Ore</div>
+    </div>
+    <div class="time-block p-1 bg-white bg-opacity-20 rounded-lg shadow-lg">
+      <div class="time-number text-xl md:text-2xl lg:text-3xl font-bold">{{ minutes }}</div>
+      <div class="time-label mt-2 text-sm md:text-base lg:text-lg">Min.</div>
+    </div>
+    <div class="time-block p-1 bg-white bg-opacity-20 rounded-lg shadow-lg">
+      <div class="time-number text-xl md:text-2xl lg:text-3xl font-bold">{{ seconds }}</div>
+      <div class="time-label mt-2 text-sm md:text-base lg:text-lg">Sec.</div>
+    </div>
+  </div>
+</div>
