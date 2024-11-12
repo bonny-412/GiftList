@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(#179d82,#0c5445);
+    background: radial-gradient(var(--color-green),var(--color-green-dark));
 }
 
 .loader {

@@ -5,6 +5,9 @@
 :root {
 	--color-red: #F81D3D;
 	--color-red-dark: #D61935;
+
+	--color-green: #179d82;
+	--color-green-dark: #0c5445;
 }
 
 body,html {

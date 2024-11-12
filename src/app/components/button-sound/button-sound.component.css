@@ -6,7 +6,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #179d82;
+    background-color: var(--color-green);
     border: none;
     display: flex;
     justify-content: center;
@@ -42,5 +42,5 @@
 }
 
 .bell-button:hover {
-    background-color: #0c5445;  /* Colore quando l'utente passa sopra il bottone */
+    background-color: var(--color-green-dark);  /* Colore quando l'utente passa sopra il bottone */
 }
