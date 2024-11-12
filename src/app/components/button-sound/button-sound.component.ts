@@ -1,4 +1,4 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button-sound',
@@ -7,27 +7,33 @@ import { AfterViewInit, Component } from '@angular/core';
   templateUrl: './button-sound.component.html',
   styleUrl: './button-sound.component.css'
 })
-export class ButtonSoundComponent implements AfterViewInit {
+export class ButtonSoundComponent implements OnInit {
   audio = new Audio();
   isAudioOn:boolean = false;
-
-  ngAfterViewInit(): void {
-    this.playSound()
-  }
-
-  playSound() {
+  showPopup: boolean = true;
+  
+  ngOnInit(): void {
+    // Non avviamo automaticamente l'audio
+    this.audio = new Audio();
     this.audio.src = '../assets/audio.mp3';
     this.audio.load();
-    this.audio.play();
-    this.isAudioOn = true;
+
+    // Nasconde il popup dopo 10 secondi
+    setTimeout(() => {
+      this.showPopup = false;
+    }, 10000);
   }
 
-clickPlaySound() {
-  if(this.isAudioOn) {
-    this.audio.pause();
-  }else {
-    this.audio.play();
-  }
-  this.isAudioOn = !this.isAudioOn
+  toggleSound() {
+    if (this.isAudioOn) {
+      this.audio.pause();
+    } else {
+      // Imposta l'audio a partire dal secondo secondo
+      this.audio.currentTime = 2;
+      this.audio.play().catch(error => {
+        console.error('Riproduzione bloccata:', error);
+      });
+    }
+    this.isAudioOn = !this.isAudioOn;
   }
 }

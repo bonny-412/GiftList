@@ -1,3 +1,9 @@
-<button class="bell-button" (click)="clickPlaySound()" title="Play/Pause">
+@if(showPopup) {
+    <div class="popup-message">
+        Premi il pulsante per attivare l'audio!
+    </div>
+}
+
+<button class="bell-button" (click)="toggleSound()" title="Play/Pause">
     <img src="../assets/images/bell.svg" alt="Campana" class="{{this.isAudioOn ? 'animate-bounce' : ''}}"/>
 </button>
