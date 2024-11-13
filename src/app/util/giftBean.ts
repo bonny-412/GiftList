@@ -3,5 +3,6 @@ export interface GiftBean {
     url:string,
     img:string,
     color:string,
-    size:string
+    size:string,
+    note?:string
 }

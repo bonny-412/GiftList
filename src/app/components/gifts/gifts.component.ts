@@ -13,6 +13,14 @@ export class GiftsComponent {
 
   gifts:GiftBean[] = [
     {
+      title: 'Bonifico PayPal',
+      url: '',
+      img: 'paypal.png',
+      color: '',
+      size: '',
+      note: 'Pagamenti da 5€'
+    },
+    {
       title: 'Yamaha MT-09',
       url: 'https://www.yamaha-motor.eu/it/it/motorcycles/hyper-naked/pdp/mt-09-2025/?srsltid=AfmBOorUB00LYHDxPgFd86pQc5NWmWKUkICcgX3cwucWOU-IQ4ZcHSSC#2025-MT09AS-MDNM6',
       img: 'mt09.png',
