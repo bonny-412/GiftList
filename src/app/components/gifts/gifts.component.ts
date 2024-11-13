@@ -14,7 +14,7 @@ export class GiftsComponent {
   gifts:GiftBean[] = [
     {
       title: 'Bonifico PayPal',
-      url: '',
+      url: 'https://regali-bonny.netlify.app/assets/images-gift/paypal.png',
       img: 'paypal.png',
       color: '',
       size: '',

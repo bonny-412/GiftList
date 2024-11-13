@@ -1,6 +1,6 @@
 @if(giftBean) {
-    <div class="relative cursor-pointer flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md product-card hover:cursor-pointer">
-        <a href="{{giftBean.url}}" target="_blank">
+    <div class="relative cursor-pointer flex h-full w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md product-card hover:cursor-pointer">
+        <span (click)="openUrl(giftBean.url)">
             <span class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl p-3 bg-slate-100">
                 <img class="object-cover product-image" src="../../../assets/images-gift/{{giftBean.img}}" alt="Immagine regalo" />
             </span>
@@ -10,9 +10,12 @@
                 </span>
                 <div class="mt-2 mb-5 flex flex-col lg:flex-row lg:items-center lg:justify-between">
                     @if (giftBean.note) {
-                        <p class="text-sm">{{giftBean.note}}</p>
-                    }@else {
+                        <p class="text-sm"><b class="text-base">Note:</b> {{giftBean.note}}</p>
+                    }
+                    @if(giftBean.color) {
                         <p class="text-sm"><b class="text-base">Colore:</b> {{giftBean.color}}</p>
+                    }
+                    @if(giftBean.size){
                         <p class="text-sm"><b class="text-base">Taglia:</b> {{giftBean.size}}</p>
                     }
                 </div>
@@ -23,6 +26,6 @@
                     </svg>
                 </span>
             </div>
-        </a>
+        </span>
     </div>
 }
