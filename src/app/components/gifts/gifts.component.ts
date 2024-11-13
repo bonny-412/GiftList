@@ -28,6 +28,13 @@ export class GiftsComponent {
       size: '-'
     },
     {
+      title: 'Tiger Sport 800',
+      url: 'https://www.triumphmotorcycles.it/moto/adventure/tiger-sport-800/tiger-sport-800-2025',
+      img: 'tiger-sport.png',
+      color: 'Sapphire black',
+      size: '-'
+    },
+    {
       title: 'Ginocchiere Kaizen',
       url: 'https://kaizen-athletica.com/products/training-knee-sleeves',
       img: 'kaizen.png',
