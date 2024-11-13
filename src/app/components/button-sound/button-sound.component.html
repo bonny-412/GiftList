@@ -5,5 +5,8 @@
 }
 
 <button class="bell-button" (click)="toggleSound()" title="Play/Pause">
-    <img src="../assets/images/bell.svg" alt="Campana" class="{{this.isAudioOn ? 'animate-bounce' : ''}}"/>
+    <img src="../assets/images/bell.svg" alt="Campana"/>
+    @if(this.isAudioOn) {
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red opacity-75"></span>
+    }
 </button>
