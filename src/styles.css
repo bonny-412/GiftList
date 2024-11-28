@@ -40,3 +40,7 @@ body {
 .font-christmas {
     font-family: Great Vibes;
 }
+
+.bg-primary-color {
+	border-color: var(--color-red) !important;
+}
