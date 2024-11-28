@@ -12,8 +12,8 @@ object-fit: contain; /* Usa "cover" se preferisci che l'immagine riempia tutto l
 transition: transform 0.3s ease-in-out; /* Transizione fluida per l'effetto di zoom */
 }
 
-.product-card:hover .product-image {
-transform: scale(1.2); /* Ingrandisci l'immagine al 120% */
+.hover-product-card:hover .product-image {
+    transform: scale(1.2); /* Ingrandisci l'immagine al 120% */
 }
 
 .button-card {

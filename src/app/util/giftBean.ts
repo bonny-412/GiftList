@@ -4,5 +4,6 @@ export interface GiftBean {
     img:string,
     color:string,
     size:string,
-    note?:string
+    note?:string,
+    isDisabled:boolean
 }
