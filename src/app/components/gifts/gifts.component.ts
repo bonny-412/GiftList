@@ -86,6 +86,14 @@ export class GiftsComponent {
       isDisabled: false
     },
     {
+      title: 'Tastiera Logitech',
+      url: 'https://www.amazon.it/Logitech-Illuminata-Bluetooth-Retroilluminata-Compatibile/dp/B07W7KTTMZ/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1ZJHP8E79BTTX&dib=eyJ2IjoiMSJ9.2-Hc5hfeTctyOJONDux-WXsWo6vEJgoX0wdW5nG3RLAwdtzYYgi3p5WDHZbS3fPI1IzP3fo2Rxm2426WvVrlSTTa1aVcs2tM41qAAqPcWHrKy7mI2V6n5FhEQmwiJm99DJSAMcuuaF_ECou3Q20AwzAoeateRcWwZ2P6qMB5W03-RGgvJ0CQp3gR71eczJ3qrxolKb9VLp4rWhqCVE8g3GB9GgdsJfKc2ip2H6VvtrzfVx0Y4mpnPcVuw7CI7gM-JK1DrT5g2I5Og4Mf09wm9cctWD1AMyWPCA_Kib90XCc.XPUawqXNmLaTlZQPImAnMWWDMxedeJpNz3BOI9cE9gQ&dib_tag=se&keywords=tastiera+logitec+mini+keys&nsdOptOutParam=true&qid=1733173088&sprefix=tastiera+logitec+mini+keys%2Caps%2C109&sr=8-1',
+      img: 'tastiera-logitech.png',
+      color: 'Nero o Bianco',
+      size: 'windows',
+      isDisabled: false
+    },
+    {
       title: 'Occhiali da vista',
       url: '',
       img: 'occhiali-vista.png',
