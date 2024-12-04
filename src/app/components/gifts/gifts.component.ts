@@ -94,6 +94,15 @@ export class GiftsComponent {
       isDisabled: false
     },
     {
+      title: 'Lampada da scrivania',
+      url: 'https://www.amazon.it/iFalarila-Scrivania-Flessibile-Caricatore-Leggere-70CM/dp/B0C4GDGR63/ref=sr_1_3_sspa?crid=D394BM5QTVYK&dib=eyJ2IjoiMSJ9.uWGnIjUi-BJ-DOdSCqt7JWPqRIq1Hefpz0BWuSarJi4SXR47ZCulaJqlRL3N7xUZgeA067zrYDce_nDyGGus6PAPTiKCKSJZB1huf-yawchO-35cHsTq8LzyEpEjTeoAgJnu_doTONNcyKB5rYKPpThp3foZwWalik50Q-nk3uqskQ1dsQNUY_ziPAWPyFg3k_HGhBY0fs58muah253DyW_kFChNZ2BlbazWeMFK_cJsq0MYlbvD7yEiBxVRIJQC20XkwmeUwbg3FuKQyzFsy_1jLf5IzW_l--5oWGWwcOA._6SquU5kPllTWhcKZLe6-7HDCD3-NPEb1usflFcGG1w&dib_tag=se&keywords=led+scrivania&nsdOptOutParam=true&qid=1733308603&sprefix=led+scri%2Caps%2C120&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1',
+      img: 'lampada_da_scrivania.png',
+      color: '',
+      size: '',
+      note: 'Indifferente il telecomando',
+      isDisabled: false
+    },
+    {
       title: 'Occhiali da vista',
       url: '',
       img: 'occhiali-vista.png',
