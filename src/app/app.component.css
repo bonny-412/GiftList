@@ -239,3 +239,15 @@ header .header-content .header-content-inner {
     color: var(--color-red);
 }
 
+#santa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px; /* Dimensione della slitta */
+    transition: transform 2s ease-in-out; /* Movimento fluido */
+    z-index: 1000;
+}
+
+#santa img {
+    width: 100%;
+}
