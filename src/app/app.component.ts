@@ -8,7 +8,7 @@ import { ButtonSoundComponent } from './components/button-sound/button-sound.com
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CountdownComponent, GiftsComponent, LoaderComponent, ButtonSoundComponent],
+  imports: [CountdownComponent, GiftsComponent, LoaderComponent, ButtonSoundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
