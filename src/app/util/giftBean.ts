@@ -142,5 +142,14 @@ export function getAllGifts(): GiftBean[] {
             isDisabled: true,
             dateInsert: '2024-12-02 08:30:00'
         },
+        {
+            title: 'MT-07 Grafiche',
+            url: 'https://www.decalmoto.com/yamaha/4224-4640-mt-07-700-2022-factory-racing.html#/25-modello-model_a',
+            img: 'mt07-grafiche.jpg',
+            color: 'MODEL A',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2024-12-20 13:15:00'
+        },
     ]
 }
