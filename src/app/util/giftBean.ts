@@ -151,5 +151,15 @@ export function getAllGifts(): GiftBean[] {
             isDisabled: false,
             dateInsert: '2024-12-20 13:15:00'
         },
+        {
+            title: 'Tappetino scrivania',
+            url: 'https://www.amazon.it/Aothia-Sottomano-protezione-antiscivolo-impermeabile/dp/B09X6M3ZHT/ref=sr_1_7?dib=eyJ2IjoiMSJ9.YPLApceHqVYoUBEcdkfGtDWwk3qcxlfcLPApq9mr8BGau9FBjshrbeAKZi9BvitRWV7jaIfApGg6SN8rmO0L7WNvM8ega6y3nmomyqxFps6q_BNQuff3jDctU7iNgpN0LULdrymbsvRJFjSUJp8eO1kS-cZk8t5zkwNgDaICrjRFUxBlZaBOH_L_gnAPHBQjTlgkEmioqsTKfRLNzc18ZARO9rAejCw_xjKOa0-Jn7mPV6P4r3Qu-BBQJYvh-IMylSA-c4s5Ho_knj6cCqvP6MeaOYHiAtyHEkkEd5iXTnfd2jqxuWxviLtazdzFFUW9aM7L9MukJsfmBLM5AcZfL7B62xYtyjwUO5-fW9CL1LjO4HT0h2p1cR76GIIslg8nigZDYz4vTfKL2zyuDzudlxhi1IAYY_XJ_tugKQFca9GgQcXokA1H-0HWeWY9h8Bs.SnEVzVja-uyvD4xHQD3HtrJENaO5OB2VuJJTqZlon4Y&dib_tag=se&keywords=copri+scrivania&nsdOptOutParam=true&qid=1734697665&sr=8-7',
+            img: 'tappetino-scrivania.png',
+            color: '',
+            size: '',
+            note: 'Tappetino a vostra scelta (immagine di esempio)',
+            isDisabled: false,
+            dateInsert: '2024-12-20 13:30:00'
+        },
     ]
 }
