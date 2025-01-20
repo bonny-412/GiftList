@@ -68,5 +68,59 @@ export function getAllGifts(): GiftBean[] {
             isDisabled: false,
             dateInsert: '2024-12-20 13:15:00'
         },
+        {
+            title: 'Giacca sci',
+            url: 'https://www.ridestore.com/it/dope-blizzard-giacca-snowboard-uomo-surf',
+            img: 'dope-1.png',
+            color: 'Surf',
+            size: 'XL',
+            isDisabled: false,
+            dateInsert: '2025-01-20 10:00:00'
+        },
+        {
+            title: 'Giacca sci',
+            url: 'https://www.ridestore.com/it/dope-blizzard-corduroy-giacca-snowboard-uomo-whitish',
+            img: 'dope-2.png',
+            color: 'Whitish Corduroy',
+            size: 'XL',
+            isDisabled: false,
+            dateInsert: '2025-01-20 10:00:02'
+        },
+        {
+            title: 'Giacca sci',
+            url: 'https://www.ridestore.com/it/dope-adept-giacca-snowboard-uomo-surf',
+            img: 'dope-3.png',
+            color: 'Surf',
+            size: 'XL',
+            isDisabled: false,
+            dateInsert: '2025-01-20 10:00:10'
+        },
+        {
+            title: 'Giacca sci',
+            url: 'https://www.ridestore.com/it/dope-adept-giacca-snowboard-uomo-whitish',
+            img: 'dope-4.png',
+            color: 'Whitish',
+            size: 'XL',
+            isDisabled: false,
+            dateInsert: '2025-01-20 10:00:12'
+        },
+        {
+            title: 'Giacca sci',
+            url: 'https://www.ridestore.com/it/dope-adept-giacca-snowboard-uomo-stratos',
+            img: 'dope-5.png',
+            color: 'Stratos',
+            size: 'XL',
+            isDisabled: false,
+            dateInsert: '2025-01-20 10:00:15'
+        },
+        {
+            title: 'Giacca sci',
+            url: 'https://www.ridestore.com/it/dope-adept-giacca-snowboard-uomo-grey-camo',
+            img: 'dope-7.png',
+            color: 'Grey Camo',
+            size: 'XL',
+            isDisabled: false,
+            dateInsert: '2025-01-20 10:00:17'
+        },
     ]
 }
