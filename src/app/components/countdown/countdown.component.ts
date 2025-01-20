@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { getBirthdayDate, getChristmasDate } from '../../util/util';
 
 @Component({
   selector: 'app-countdown',
@@ -25,7 +26,7 @@ export class CountdownComponent implements OnInit {
 
   updateCountdown(): void {
     this.urlIconCountdown = this.isChristmas ? '../../../assets/images/christmas-tree.svg' : '../../../assets/images/birthday-cake.svg';
-    const dateString = this.isChristmas ? 'December 25, 2024 00:00:00' : 'December 27, 2024 00:00:00';
+    const dateString = this.isChristmas ? getChristmasDate() : getBirthdayDate();
     const dateCountdown = new Date(dateString).getTime();
     const currentDate = new Date().getTime();
     const timeDifference = dateCountdown - currentDate;
