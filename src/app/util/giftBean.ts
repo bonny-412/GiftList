@@ -22,15 +22,6 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2024-11-30 00:00:00'
         },
         {
-            title: 'Yamaha MT-09',
-            url: 'https://www.yamaha-motor.eu/it/it/motorcycles/hyper-naked/pdp/mt-09-2025/?srsltid=AfmBOorUB00LYHDxPgFd86pQc5NWmWKUkICcgX3cwucWOU-IQ4ZcHSSC#2025-MT09AS-MDNM6',
-            img: 'mt09.png',
-            color: 'Nero',
-            size: '-',
-            isDisabled: false,
-            dateInsert: '2024-11-30 00:00:00'
-        },
-        {
             title: 'Tiger Sport 800',
             url: 'https://www.triumphmotorcycles.it/moto/adventure/tiger-sport-800/tiger-sport-800-2025',
             img: 'tiger-sport.png',
@@ -58,15 +49,6 @@ export function getAllGifts(): GiftBean[] {
             note: '',
             isDisabled: false,
             dateInsert: '2024-12-13 08:30:00'
-        },
-        {
-            title: 'MT-07 Grafiche',
-            url: 'https://www.decalmoto.com/yamaha/4224-4640-mt-07-700-2022-factory-racing.html#/25-modello-model_a',
-            img: 'mt07-grafiche.jpg',
-            color: 'MODEL A',
-            size: '',
-            isDisabled: false,
-            dateInsert: '2024-12-20 13:15:00'
         },
         {
             title: 'Giacca sci',
@@ -121,6 +103,24 @@ export function getAllGifts(): GiftBean[] {
             size: 'XL',
             isDisabled: false,
             dateInsert: '2025-01-20 10:00:17'
+        },
+        {
+            title: 'Yamaha Tracer 9 GT 2024',
+            url: 'https://www.yamaha-motor.eu/it/it/motorcycles/sport-touring/pdp/tracer-9-gt-2024/',
+            img: 'tracer-9-gt.png',
+            color: 'Pure White',
+            size: '-',
+            isDisabled: false,
+            dateInsert: '2025-05-20 00:00:00'
+        },
+        {
+            title: 'Yamaha Tracer 9 GT 2025',
+            url: 'https://www.yamaha-motor.eu/it/it/motorcycles/sport-touring/pdp/tracer-9-gt-2025/#2025-MT09ATRDXS-MLNM4',
+            img: 'tracer-9-gt-2025.png',
+            color: 'Tech Black',
+            size: '-',
+            isDisabled: false,
+            dateInsert: '2025-05-20 01:00:00'
         },
     ]
 }
