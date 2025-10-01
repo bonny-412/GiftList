@@ -106,17 +106,8 @@ export function getAllGifts(): GiftBean[] {
         },
         {
             title: 'Casco sci',
-            url: 'https://www.decathlon.it/p/casco-sci-adulto-pst-500-nero-wedze/_/R-p-302055?mc=8543286&c=nero%20grafite_grigio%20grafite',
-            img: 'casco-sci-1.png',
-            color: 'Nero',
-            size: 'L',
-            isDisabled: false,
-            dateInsert: '2025-09-30 09:20:00'
-        },
-        {
-            title: 'Casco sci',
             url: 'https://www.decathlon.it/p/casco-sci-snowboard-adulto-e-bambino-fs300-viola/_/R-p-166071?mc=8660316&c=bianco%20brillante',
-            img: 'casco-sci-2.png',
+            img: 'casco-sci-1.png',
             color: 'Bianco/Nero',
             size: 'L',
             isDisabled: false,
