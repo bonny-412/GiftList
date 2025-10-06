@@ -70,9 +70,9 @@ export function getAllGifts(): GiftBean[] {
         },
         {
             title: 'Zaino sci',
-            url: 'https://www.decathlon.it/tutti-gli-sport/sport-invernali/zaini-sci?pdt-highlight=333497&mc=8817094&utm_source=google&utm_medium=cpc&utm_campaign=it_t-perf_ct-shopp_n-b2c-brand-products_ts-gen_f-cv_o-roas_&gad_source=1&gad_campaignid=20498729453&gclid=Cj0KCQjw3OjGBhDYARIsADd-uX6mMFFhmE5l8V0YMs0X0VSaDjbPZUoRfv5HivlBxEqhvJybgKr1wLYaAg6wEALw_wcB',
+            url: 'https://www.decathlon.it/p/zaino-freeride-e-mtb-fr-am-100-23-litri-nero/_/R-p-333497?mc=8655058&c=nero%20fumo',
             img: 'zaino-sci.png',
-            color: 'Bianco, Nero',
+            color: 'Nero',
             size: '',
             isDisabled: false,
             dateInsert: '2025-09-30 08:26:00'
@@ -108,7 +108,7 @@ export function getAllGifts(): GiftBean[] {
             title: 'Casco sci',
             url: 'https://www.decathlon.it/p/casco-sci-snowboard-adulto-e-bambino-fs300-viola/_/R-p-166071?mc=8660316&c=bianco%20brillante',
             img: 'casco-sci-1.png',
-            color: 'Bianco/Nero',
+            color: 'Nero',
             size: 'L',
             isDisabled: false,
             dateInsert: '2025-09-30 09:21:00'
