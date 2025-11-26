@@ -22,26 +22,6 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2024-11-30 00:00:00'
         },
         {
-            title: 'Anker caricatore',
-            url: 'https://www.amazon.it/dp/B09Q6BJ742?ref=cm_sw_r_cso_cp_apin_dp_26651946T4GTQ8XR8FYF&ref_=cm_sw_r_cso_cp_apin_dp_26651946T4GTQ8XR8FYF&social_share=cm_sw_r_cso_cp_apin_dp_26651946T4GTQ8XR8FYF&starsLeft=1&skipTwisterOG=1',
-            img: 'anker-caricatore.png',
-            color: '',
-            size: '',
-            note: '',
-            isDisabled: false,
-            dateInsert: '2024-12-13 08:30:00'
-        },
-        {
-            title: 'Anker cavo',
-            url: 'https://www.amazon.it/dp/B0D4YZCM18?ref=cm_sw_r_cso_cp_apin_dp_N44MR5BDH1MV8NCTETAP&ref_=cm_sw_r_cso_cp_apin_dp_N44MR5BDH1MV8NCTETAP&social_share=cm_sw_r_cso_cp_apin_dp_N44MR5BDH1MV8NCTETAP&starsLeft=1&skipTwisterOG=1',
-            img: 'anker-cavo.png',
-            color: '',
-            size: '',
-            note: '',
-            isDisabled: false,
-            dateInsert: '2024-12-13 08:30:00'
-        },
-        {
             title: 'Yamaha Tracer 9 GT 2024',
             url: 'https://www.yamaha-motor.eu/it/it/motorcycles/sport-touring/pdp/tracer-9-gt-2024/',
             img: 'tracer-9-gt.png',
