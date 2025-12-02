@@ -113,5 +113,15 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2025-12-02 10:21:00',
             note: 'Prodotto di esempio'
         },
+        {
+            title: 'Pantaloni sci Altavia',
+            url: 'https://www.ovs.it/it/it/p/pantaloni-da-sci-con-bretelle-altavia-with-deborah-compagnoni-002182921.html',
+            img: 'pantaloni-sci-altavia.png',
+            color: 'Nero',
+            size: 'L/XL',
+            isDisabled: false,
+            dateInsert: '2025-12-02 10:30:00',
+            note: ''
+        },
     ]
 }
