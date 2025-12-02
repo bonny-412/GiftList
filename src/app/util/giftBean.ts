@@ -123,5 +123,15 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2025-12-02 10:30:00',
             note: ''
         },
+        {
+            title: 'Rasoio Philips 7000',
+            url: 'https://www.amazon.it/dp/B0BWKBKD9S?ref=cm_sw_r_cso_cp_apin_dp_WMJRH01JRJNPJRCV8S4W&ref_=cm_sw_r_cso_cp_apin_dp_WMJRH01JRJNPJRCV8S4W&social_share=cm_sw_r_cso_cp_apin_dp_WMJRH01JRJNPJRCV8S4W',
+            img: 'rasoio-1.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2025-12-02 22:30:00',
+            note: ''
+        },
     ]
 }
