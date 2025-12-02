@@ -93,5 +93,25 @@ export function getAllGifts(): GiftBean[] {
             isDisabled: false,
             dateInsert: '2025-09-30 09:21:00'
         },
+        {
+            title: 'Walking pad',
+            url: 'https://www.amazon.it/dp/B0FTGG6B53?ref=cm_sw_r_cso_cp_apin_dp_N0T4E0EAQP17MPGC7Q4X&ref_=cm_sw_r_cso_cp_apin_dp_N0T4E0EAQP17MPGC7Q4X&social_share=cm_sw_r_cso_cp_apin_dp_N0T4E0EAQP17MPGC7Q4X',
+            img: 'walking-pad.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2025-12-02 09:21:00',
+            note: 'Prodotto di esempio'
+        },
+        {
+            title: 'Scrivania regolabile',
+            url: 'https://www.flexispot.it/scrivania-regolabile-in-altezza-e1.html',
+            img: 'scrivania-regolabile.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2025-12-02 10:21:00',
+            note: 'Prodotto di esempio'
+        },
     ]
 }
