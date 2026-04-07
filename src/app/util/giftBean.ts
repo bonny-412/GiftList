@@ -51,5 +51,15 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2026-04-07 15:45:00',
             note: 'X2'
         },
+        {
+            title: 'Becco',
+            url: 'https://www.vasileiadisworks.com/t1-yamaha-tracer-9-wing',
+            img: 'becco.png',
+            color: 'Tracer 9 GT+',
+            size: 'Long version',
+            isDisabled: false,
+            dateInsert: '2026-04-07 21:38:00',
+            note: ''
+        },
     ]
 }
