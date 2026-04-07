@@ -22,88 +22,6 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2024-11-30 00:00:00'
         },
         {
-            title: 'Yamaha Tracer 9 GT 2024',
-            url: 'https://www.yamaha-motor.eu/it/it/motorcycles/sport-touring/pdp/tracer-9-gt-2024/',
-            img: 'tracer-9-gt.png',
-            color: 'Pure White',
-            size: '-',
-            isDisabled: false,
-            dateInsert: '2025-05-20 00:00:00'
-        },
-        {
-            title: 'Yamaha Tracer 9 GT + 2024',
-            url: 'https://www.autoscout24.it/annunci/yamaha-tracer-9-gt--benzina-blu-azzurro-25f0f599-4b71-49cf-bdeb-2dc34289cacf?sort=standard&desc=0&lastSeenGuidPresent=false&cldtidx=1&position=1&search_id=us54e7on53&source_otp=t30&ap_tier=t30&source=listpage_search-results&order_bucket=unknown&new_taxonomy_available=false&boosting_product=mia&relevance_adjustment=boost&applied_boost_level=t30&boost_level=t30',
-            img: 'tracer-gt-plus.png',
-            color: 'Icon Performance',
-            size: '-',
-            isDisabled: false,
-            dateInsert: '2025-09-30 08:05:00'
-        },
-        {
-            title: 'Insta360 asta',
-            url: 'https://www.amazon.it/Insta360-Selfie-Stick-Invisibile-114/dp/B0BKZNX4KF/ref=sr_1_6?crid=12E2M8V7VL7VD&dib=eyJ2IjoiMSJ9.6TbzMNcOSSQfVzisvPMLCW5y5LePyM2rqruAcchUC492XnJhoiNQwUr6J0JWIWTFGwXuAbC5i6cdZPuiZfoiVaYA_gL-wa5PHGjYHx_9_TlyAQdJgJb-o7T4294WFOVCb-WHjO-bljijoxSDJnBClVs0Cpd3Tk5rN9rIfzB9NM42YiBqba68XfHPZwMX5w2jxsjfwQ9WWD6hNbT4Tu6i77mLrIlh8ZIGpSbgXVC2Vt5zi3g6RO4Y4WuwiE8wARPZui5liBAKk0dpOvheVuQ4trqlz9Fc0mGV7Hd8kTSXmuI.EPvIvpN7gQqdTQx3cMcT05JqjSu-zT68CMbZXDn2OhQ&dib_tag=se&keywords=insta+360+asta&qid=1759212521&sprefix=insta+360+as%2Caps%2C254&sr=8-6',
-            img: 'insta360-asta.png',
-            color: '',
-            size: '',
-            isDisabled: false,
-            dateInsert: '2025-09-30 08:03:00'
-        },
-        {
-            title: 'Zaino sci',
-            url: 'https://www.decathlon.it/p/zaino-freeride-e-mtb-fr-am-100-23-litri-nero/_/R-p-333497?mc=8655058&c=nero%20fumo',
-            img: 'zaino-sci.png',
-            color: 'Nero',
-            size: '',
-            isDisabled: false,
-            dateInsert: '2025-09-30 08:26:00'
-        },
-        {
-            title: 'Scarpone sci Head',
-            url: 'https://www.decathlon.it/p/scarpone-sci-uomo-head-formula-120/_/R-p-X8923483?mc=8923483',
-            img: 'scarpone-sci-head.png',
-            color: '',
-            size: '43/44',
-            isDisabled: false,
-            dateInsert: '2025-09-30 09:00:00'
-        },
-        {
-            title: 'Scarpone sci Rossignol',
-            url: 'https://www.decathlon.it/p/mp/rossignol/scarponi-da-sci-uomo-alltrack-110-hv-gw/_/R-p-11f8a237-40a7-4d54-b838-54d7d09f0d38?mc=11f8a237-40a7-4d54-b838-54d7d09f0d38_c251&c=grigio',
-            img: 'scarpone-sci-rossignol.png',
-            color: '',
-            size: '43/44',
-            isDisabled: false,
-            dateInsert: '2025-09-30 09:00:00'
-        },
-        {
-            title: 'Scarpone sci Tecnica',
-            url: 'https://www.nencinisport.it/it/tecnica-mach-boa-hv-100-x-gw-3712743.html',
-            img: 'scarpone-sci-tecnica.png',
-            color: '',
-            size: '43/44',
-            isDisabled: false,
-            dateInsert: '2025-09-30 09:00:00'
-        },
-        {
-            title: 'Casco sci',
-            url: 'https://www.decathlon.it/p/casco-sci-snowboard-adulto-e-bambino-fs300-viola/_/R-p-166071?mc=8660316&c=bianco%20brillante',
-            img: 'casco-sci-1.png',
-            color: 'Nero',
-            size: 'L',
-            isDisabled: false,
-            dateInsert: '2025-09-30 09:21:00'
-        },
-        {
-            title: 'Walking pad',
-            url: 'https://www.amazon.it/dp/B0FTGG6B53?ref=cm_sw_r_cso_cp_apin_dp_N0T4E0EAQP17MPGC7Q4X&ref_=cm_sw_r_cso_cp_apin_dp_N0T4E0EAQP17MPGC7Q4X&social_share=cm_sw_r_cso_cp_apin_dp_N0T4E0EAQP17MPGC7Q4X',
-            img: 'walking-pad.png',
-            color: '',
-            size: '',
-            isDisabled: false,
-            dateInsert: '2025-12-02 09:21:00',
-            note: 'Prodotto di esempio'
-        },
-        {
             title: 'Scrivania regolabile',
             url: 'https://www.flexispot.it/scrivania-regolabile-in-altezza-e1.html',
             img: 'scrivania-regolabile.png',
@@ -114,24 +32,24 @@ export function getAllGifts(): GiftBean[] {
             note: 'Prodotto di esempio'
         },
         {
-            title: 'Pantaloni sci Altavia',
-            url: 'https://www.ovs.it/it/it/p/pantaloni-da-sci-con-bretelle-altavia-with-deborah-compagnoni-002182921.html',
-            img: 'pantaloni-sci-altavia.png',
-            color: 'Nero',
-            size: 'XL',
-            isDisabled: false,
-            dateInsert: '2025-12-02 10:30:00',
-            note: ''
-        },
-        {
-            title: 'Rasoio Philips 7000',
-            url: 'https://www.amazon.it/dp/B0BWKBKD9S?ref=cm_sw_r_cso_cp_apin_dp_WMJRH01JRJNPJRCV8S4W&ref_=cm_sw_r_cso_cp_apin_dp_WMJRH01JRJNPJRCV8S4W&social_share=cm_sw_r_cso_cp_apin_dp_WMJRH01JRJNPJRCV8S4W',
-            img: 'rasoio-1.png',
+            title: 'Portatarga',
+            url: 'https://www.urbanobruni.it/it/accessori-ub/yamaha/tracer-9-tracer-9-gt-2021-2024/kit-portatarga-sport-touring-yamaha-tracer-9/',
+            img: 'portatarga.png',
             color: '',
             size: '',
             isDisabled: false,
-            dateInsert: '2025-12-02 22:30:00',
-            note: ''
+            dateInsert: '2026-04-07 15:29:00',
+            note: 'Portatarga + luce targa + connettore luce targa'
+        },
+        {
+            title: 'Frecce',
+            url: 'https://www.urbanobruni.it/it/illuminazione/indicatori-di-direzione-a-led/indicatori-di-direzione-a-led-project-2/',
+            img: 'frecce-1.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2026-04-07 15:45:00',
+            note: 'X2'
         },
     ]
 }
