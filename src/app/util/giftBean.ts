@@ -32,31 +32,11 @@ export function getAllGifts(): GiftBean[] {
             note: 'Prodotto di esempio'
         },
         {
-            title: 'Portatarga',
-            url: 'https://www.urbanobruni.it/it/accessori-ub/yamaha/tracer-9-tracer-9-gt-2021-2024/kit-portatarga-sport-touring-yamaha-tracer-9/',
-            img: 'portatarga.png',
-            color: '',
-            size: '',
-            isDisabled: false,
-            dateInsert: '2026-04-07 15:29:00',
-            note: 'Portatarga + luce targa + connettore luce targa'
-        },
-        {
-            title: 'Frecce',
-            url: 'https://www.urbanobruni.it/it/illuminazione/indicatori-di-direzione-a-led/indicatori-di-direzione-a-led-project-2/',
-            img: 'frecce-1.png',
-            color: '',
-            size: '',
-            isDisabled: false,
-            dateInsert: '2026-04-07 15:45:00',
-            note: 'X2'
-        },
-        {
             title: 'Becco',
-            url: 'https://www.vasileiadisworks.com/t1-yamaha-tracer-9-wing',
+            url: 'https://www.vasileiadisworks.com/front-wing-v2-for-yamaha-tracer-9',
             img: 'becco.png',
-            color: 'Tracer 9 GT+',
-            size: 'Long version',
+            color: '',
+            size: 'Tracer 9 GT+',
             isDisabled: false,
             dateInsert: '2026-04-07 21:38:00',
             note: ''
