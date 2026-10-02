@@ -52,14 +52,14 @@ export function getAllGifts(): GiftBean[] {
             note: 'Canna + mulinello per spinning in mare da scogliera, grammi massimo ta i 40/60g. Chiedere a loro.'
         },
         {
-            title: 'Grafiche Modello A/B',
+            title: 'Grafiche Modello A',
             url: 'https://www.decalmoto.com/it/yamaha/4950-8107-tracer-9-gt-racing-icon-performance.html#/25-modello-model_a/131-aspetto_finitura-lucido_glossy',
             img: 'grafiche-1.png',
-            color: 'Modello A o B',
+            color: 'Modello A',
             size: '',
             isDisabled: false,
             dateInsert: '2026-10-02 12:13:00',
-            note: 'Per il Modello A o B, sostituire tutte le parti bianche con il grigio originale della moto. La sostituzione deve riguardare sia le scritte sia le parti grafiche di fondo; in particolare, per il Modello B, anche il grande quadrato/riquadro dove è presente il numero 9 deve essere grigio anziché bianco.'
+            note: 'Per il Modello A, sostituire tutte le parti bianche con il grigio originale della moto. La sostituzione deve riguardare sia le scritte sia le parti grafiche di fondo.'
         }
     ]
 }
