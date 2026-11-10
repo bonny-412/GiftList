@@ -32,16 +32,6 @@ export function getAllGifts(): GiftBean[] {
             note: 'Prodotto di esempio'
         },
         {
-            title: 'Becco',
-            url: 'https://www.vasileiadisworks.com/front-wing-v2-for-yamaha-tracer-9',
-            img: 'becco.png',
-            color: '',
-            size: 'Tracer 9 GT+',
-            isDisabled: false,
-            dateInsert: '2026-04-07 21:38:00',
-            note: ''
-        },
-        {
             title: 'Spinning mare',
             url: 'https://www.nencinisport.it/it/sport/pesca/',
             img: 'nencini-sport.png',
