@@ -41,5 +41,25 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2026-10-02 11:13:00',
             note: 'Canna + mulinello per spinning in mare da scogliera, grammi massimo ta i 40/60g. Chiedere a loro.'
         },
+        {
+            title: 'Valvole',
+            url: 'https://amzn.eu/d/03cAHf6N',
+            img: 'valvole.png',
+            color: 'Nero',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2026-11-12 13:33:00',
+            note: ''
+        },
+        {
+            title: 'Telecomando Insta360',
+            url: 'https://a.aliexpress.com/_EIjPTTs',
+            img: 'telecomando-insta360.png',
+            color: 'Colore nero',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2026-11-12 13:34:00',
+            note: ''
+        },
     ]
 }
