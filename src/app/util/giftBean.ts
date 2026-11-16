@@ -61,5 +61,25 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2026-11-12 13:34:00',
             note: ''
         },
+        {
+            title: 'Logitech G G432',
+            url: 'https://www.amazon.it/dp/B07MTXLFXV?ref=cm_sw_r_cso_wa_apin_dp_QF2QA8J1P15ZK8Y6Q03N&ref_=cm_sw_r_cso_wa_apin_dp_QF2QA8J1P15ZK8Y6Q03N&social_share=cm_sw_r_cso_wa_apin_dp_QF2QA8J1P15ZK8Y6Q03N',
+            img: 'cuffie-1.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2026-11-16 14:00:00',
+            note: ''
+        },
+        {
+            title: 'Logitech G G335',
+            url: 'https://www.amazon.it/dp/B07W6J6TG5?ref=cm_sw_r_cso_wa_apin_dp_0TYMNA10VS1WTZPQGHJF&ref_=cm_sw_r_cso_wa_apin_dp_0TYMNA10VS1WTZPQGHJF&social_share=cm_sw_r_cso_wa_apin_dp_0TYMNA10VS1WTZPQGHJF',
+            img: 'cuffie-2.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2026-11-16 14:01:00',
+            note: ''
+        },
     ]
 }
