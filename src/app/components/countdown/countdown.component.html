@@ -1,5 +1,6 @@
 <div class="countdown" [class.countdown-christmas]="isChristmas">
-  <img class="h-6 w-6 shrink-0" [src]="urlIconCountdown" alt="">
+  <img class="h-6 w-6 shrink-0"
+    [src]="isChristmas ? 'assets/images/christmas-tree.svg' : 'assets/images/birthday-cake.svg'" alt="">
   <div>
     <p class="occasion">
       <span class="font-bold">{{ isChristmas ? 'Natale' : 'Compleanno' }}</span>
@@ -7,8 +8,12 @@
         <time datetime="12-25">25 dicembre</time>
       }
     </p>
-    <p class="text-sm font-bold tabular-nums">
-      {{ days }} g · {{ hours }} h<span class="countdown-detail" [class.countdown-detail-urgent]="days === 0 && hours === 0"> · {{ minutes }} min · {{ seconds }} s</span>
-    </p>
+    @if (isOccasionDay) {
+      <p class="text-sm font-bold">{{ isChristmas ? 'Buon Natale!' : 'Buon compleanno!' }}</p>
+    } @else {
+      <p class="text-sm font-bold tabular-nums">
+        {{ days }} g · {{ hours }} h<span class="countdown-detail" [class.countdown-detail-urgent]="days === 0 && hours === 0"> · {{ minutes }} min · {{ seconds }} s</span>
+      </p>
+    }
   </div>
 </div>

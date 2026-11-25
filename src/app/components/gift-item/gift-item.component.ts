@@ -10,5 +10,7 @@ import { GiftBean } from '../../util/giftBean';
 })
 export class GiftItemComponent {
   @Input('giftBean') giftBean:GiftBean|undefined;
-
+  @Input() eagerImage = false;
+  @Input() priorityImage = false;
+  imageStatus: 'loading' | 'loaded' | 'error' = 'loading';
 }

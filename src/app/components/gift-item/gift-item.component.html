@@ -1,7 +1,10 @@
 @if (giftBean) {
   <article class="product-card">
-    <div class="product-media">
-      <img src="assets/images-gift/{{ giftBean.img }}" alt="" loading="lazy">
+    <div class="product-media" [class.is-loading]="imageStatus === 'loading'">
+      <img alt="" [attr.loading]="eagerImage ? 'eager' : 'lazy'"
+        [attr.fetchpriority]="priorityImage ? 'high' : null"
+        (load)="imageStatus = 'loaded'" (error)="imageStatus = 'error'"
+        [class.is-loaded]="imageStatus === 'loaded'" [src]="'assets/images-gift/' + giftBean.img">
     </div>
     <div class="product-content">
       <h3>{{ giftBean.title }}</h3>
@@ -21,7 +24,7 @@
       @if (giftBean.isDisabled || !giftBean.url) {
         <p class="unavailable">Non disponibile</p>
       } @else {
-        <a class="product-link" [href]="giftBean.url" target="_blank" rel="noopener"
+        <a class="product-link gift-action" [href]="giftBean.url" target="_blank" rel="noopener"
           [attr.aria-label]="'Vedi prodotto: ' + giftBean.title + ' (si apre in una nuova scheda)'">
           Vedi prodotto
           <span class="gift-icon" aria-hidden="true"></span>

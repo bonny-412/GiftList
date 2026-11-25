@@ -12,12 +12,15 @@ export function sortRecipes():SelectItem[] {
     ];
 }
 
-export function getChristmasDate():string {
-    const date = new Date();
-    return `December 25, ${date.getFullYear()} 00:00:00`;
-}
+export function getDecemberCountdown(now: Date, dayOfMonth: number): number | null {
+    const year = now.getFullYear();
+    const occasion = new Date(year, 11, dayOfMonth);
+    const dayAfter = new Date(year, 11, dayOfMonth + 1);
 
-export function getBirthdayDate():string {
-    const date = new Date();
-    return `December 27, ${date.getFullYear()} 00:00:00`;
+    if (now >= occasion && now < dayAfter) {
+        return null;
+    }
+
+    const target = now < occasion ? occasion : new Date(year + 1, 11, dayOfMonth);
+    return Math.ceil((target.getTime() - now.getTime()) / 1000);
 }

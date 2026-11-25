@@ -1,13 +1,12 @@
 import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { GiftsComponent } from './components/gifts/gifts.component';
-import { LoaderComponent } from './components/loader/loader.component';
 import { ButtonSoundComponent } from './components/button-sound/button-sound.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CountdownComponent, GiftsComponent, LoaderComponent, ButtonSoundComponent],
+  imports: [CountdownComponent, GiftsComponent, ButtonSoundComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

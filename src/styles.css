@@ -16,11 +16,34 @@ body {
     margin: 0;
     background: var(--color-ivory);
     color: var(--color-pine);
-    font-family: Muli, Helvetica, Arial, sans-serif;
+    font-family: Mulish, Helvetica, Arial, sans-serif;
 }
 
 .font-christmas {
     font-family: "Great Vibes", cursive;
+}
+
+.gift-action {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    min-height: 2.75rem;
+    padding: .5rem .75rem;
+    border-radius: .6rem;
+    background: var(--color-pine);
+    color: var(--color-ivory);
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.gift-action:focus-visible {
+    outline-color: var(--color-pine);
+}
+
+@media (hover: hover) {
+    .gift-action:hover {
+        background: var(--color-red-dark);
+    }
 }
 
 :focus-visible {

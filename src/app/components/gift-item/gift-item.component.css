@@ -30,6 +30,29 @@
     width: calc(100% - 1.3rem);
     height: calc(100% - 1.3rem);
     object-fit: contain;
+    opacity: 0;
+}
+
+.product-media img.is-loaded {
+    opacity: 1;
+}
+
+.product-media.is-loading {
+    background: #eee4d4 linear-gradient(110deg, transparent 25%, #fff9 45%, transparent 65%) 100% / 220%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .product-media img {
+        transition: opacity .2s ease-out;
+    }
+
+    .product-media.is-loading {
+        animation: image-shimmer 1.4s linear infinite;
+    }
+}
+
+@keyframes image-shimmer {
+    to { background-position: -80%; }
 }
 
 @media (max-width: 36rem) {
@@ -105,16 +128,7 @@ h3 {
 .product-link {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: .5rem;
     width: 100%;
-    min-height: 2.75rem;
-    padding: .5rem .75rem;
-    border-radius: .6rem;
-    background: var(--color-pine);
-    color: var(--color-ivory);
-    font-size: .875rem;
-    font-weight: 700;
 }
 
 .gift-icon {
@@ -154,16 +168,6 @@ h3 {
     inset: 0;
     border-radius: 1rem;
     content: "";
-}
-
-.product-link:focus-visible {
-    outline-color: var(--color-pine);
-}
-
-@media (hover: hover) {
-    .product-link:hover {
-        background: var(--color-red-dark);
-    }
 }
 
 .product-card:has(.product-link:hover, .product-link:focus-visible) {
