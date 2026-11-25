@@ -1,0 +1,32 @@
+.countdown {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: 100%;
+    padding: .5rem .7rem;
+    border: 1px solid #fff4dc38;
+    border-radius: .75rem;
+    background: #fff4dc10;
+}
+
+.countdown-christmas {
+    border-color: #d6ad66;
+    background: #f4cf8619;
+}
+
+.occasion {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .45rem;
+    font-size: .75rem;
+}
+
+.countdown-christmas .occasion {
+    color: var(--holiday-gold);
+}
+
+@media (max-width: 36rem) {
+    .countdown-detail:not(.countdown-detail-urgent) {
+        display: none;
+    }
+}

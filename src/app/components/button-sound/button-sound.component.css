@@ -1,50 +1,33 @@
-/* app.component.css */
-.bell-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: var(--color-red);
-    border: none;
-    display: flex;
-    justify-content: center;
+:host {
+    display: block;
+    margin-top: .65rem;
+}
+
+.music-button {
+    display: inline-flex;
+    min-height: 2.75rem;
     align-items: center;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    gap: .45rem;
+    padding: .4rem .75rem;
+    border: 1px solid #d6ad6680;
+    border-radius: .7rem;
+    background: #142e27;
+    color: var(--color-ivory);
+    font-size: .875rem;
 }
 
-.bg-red {
-    background-color: var(--color-red);
+.music-button img {
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
-.popup-message {
-    position: fixed;
-    bottom: 90px; /* Posizionato sopra il bottone */
-    right: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    animation: fadeOut 1s linear 9s forwards; /* Fading out prima di scomparire */
+.music-button:hover,
+.music-button[aria-pressed="true"] {
+    border-color: var(--holiday-gold);
+    color: var(--holiday-gold);
 }
 
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-    }
-}
-
-.bell-button img {
-    width: 40px;  /* Dimensione dell'icona della campana */
-    height: 40px; /* Dimensione dell'icona della campana */
-}
-
-.bell-button:hover {
-    background-color: var(--color-red-dark);  /* Colore quando l'utente passa sopra il bottone */
+.music-error {
+    margin-top: .35rem;
+    font-size: .875rem;
 }

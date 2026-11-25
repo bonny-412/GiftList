@@ -1,12 +1,11 @@
-@if(showPopup) {
-    <div class="popup-message">
-        Premi il pulsante per attivare l'audio!
-    </div>
-}
+<audio #music src="assets/audio.mp3" preload="none"
+  (playing)="isAudioOn = true" (pause)="isAudioOn = false" (ended)="isAudioOn = false"></audio>
 
-<button class="bell-button" (click)="toggleSound()" title="Play/Pause">
-    <img src="../assets/images/bell.svg" alt="Campana"/>
-    @if(this.isAudioOn) {
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red opacity-75"></span>
-    }
+<button type="button" class="music-button" aria-label="Musica" [attr.aria-pressed]="isAudioOn"
+  [disabled]="playbackPending" (click)="toggleSound(music)">
+  <img src="assets/images/bell.svg" alt="">
+  <span aria-hidden="true">Musica {{ isAudioOn ? 'attiva' : 'disattivata' }}</span>
 </button>
+@if (playbackFailed) {
+  <p class="music-error" role="status">Musica non disponibile. Riprova.</p>
+}

@@ -1,39 +1,66 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+
+const musicPreferenceKey = 'giftlist.music';
 
 @Component({
   selector: 'app-button-sound',
   standalone: true,
-  imports: [],
   templateUrl: './button-sound.component.html',
   styleUrl: './button-sound.component.css'
 })
 export class ButtonSoundComponent implements OnInit {
-  audio = new Audio();
-  isAudioOn:boolean = false;
-  showPopup: boolean = true;
-  
-  ngOnInit(): void {
-    // Non avviamo automaticamente l'audio
-    this.audio = new Audio();
-    this.audio.src = '../assets/audio.mp3';
-    this.audio.load();
+  @ViewChild('music', { static: true }) private music!: ElementRef<HTMLAudioElement>;
 
-    // Nasconde il popup dopo 10 secondi
-    setTimeout(() => {
-      this.showPopup = false;
-    }, 10000);
+  isAudioOn = false;
+  playbackFailed = false;
+  playbackPending = false;
+
+  ngOnInit(): void {
+    let musicEnabled = false;
+    try {
+      musicEnabled = localStorage.getItem(musicPreferenceKey) === 'on';
+    } catch {
+      return;
+    }
+
+    if (musicEnabled) {
+      void this.playMusic(this.music.nativeElement, false);
+    }
   }
 
-  toggleSound() {
-    if (this.isAudioOn) {
-      this.audio.pause();
-    } else {
-      // Imposta l'audio a partire dal secondo secondo
-      this.audio.currentTime = 2;
-      this.audio.play().catch(error => {
-        console.error('Riproduzione bloccata:', error);
-      });
+  async toggleSound(audio: HTMLAudioElement): Promise<void> {
+    if (!audio.paused) {
+      audio.pause();
+      this.savePreference(false);
+      return;
     }
-    this.isAudioOn = !this.isAudioOn;
+
+    if (await this.playMusic(audio, true)) {
+      this.savePreference(true);
+    }
+  }
+
+  private async playMusic(audio: HTMLAudioElement, userInitiated: boolean): Promise<boolean> {
+    this.playbackFailed = false;
+    this.playbackPending = true;
+
+    try {
+      audio.currentTime = 2;
+      await audio.play();
+      return true;
+    } catch {
+      this.playbackFailed = userInitiated;
+      return false;
+    } finally {
+      this.playbackPending = false;
+    }
+  }
+
+  private savePreference(enabled: boolean): void {
+    try {
+      localStorage.setItem(musicPreferenceKey, enabled ? 'on' : 'off');
+    } catch {
+      // Playback still works when storage is unavailable.
+    }
   }
 }

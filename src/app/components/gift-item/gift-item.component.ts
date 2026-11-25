@@ -11,11 +11,4 @@ import { GiftBean } from '../../util/giftBean';
 export class GiftItemComponent {
   @Input('giftBean') giftBean:GiftBean|undefined;
 
-  constructor() {}
-
-  openUrl(url:string) {
-    if(url) {
-      window.open(url, '_blank');
-    }
-  }
 }

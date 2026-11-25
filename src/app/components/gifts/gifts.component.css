@@ -1,0 +1,92 @@
+.gift-toolbar,
+.gift-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.gift-controls {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.gift-toolbar {
+    margin-top: .75rem;
+}
+
+summary {
+    display: list-item;
+    width: fit-content;
+    min-height: 2.75rem;
+    padding: .6rem .75rem;
+    border: 1px solid #a7ada2;
+    border-radius: .65rem;
+    background: white;
+    cursor: pointer;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.gift-count {
+    position: absolute;
+    top: .75rem;
+    right: 0;
+    color: #46594e;
+    font-size: .875rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .35rem;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+input,
+select {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: .5rem .75rem;
+    border: 1px solid #a7ada2;
+    border-radius: .65rem;
+    background: white;
+}
+
+input {
+    padding-right: 3rem;
+}
+
+.clear-search {
+    position: absolute;
+    inset-block: 0;
+    right: 0;
+    width: 2.75rem;
+    border-radius: .65rem;
+    font-size: 1.4rem;
+}
+
+.gift-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 1.5rem;
+    border: 1px dashed #a7ada2;
+    border-radius: .8rem;
+    text-align: center;
+}
+
+.reset-search {
+    min-height: 2.75rem;
+    margin-top: .6rem;
+    padding-inline: .75rem;
+    border: 1px solid #a7ada2;
+    border-radius: .6rem;
+    color: var(--color-red-dark);
+}
+
+@media (min-width: 36rem) {
+    .gift-toolbar {
+        grid-template-columns: minmax(0, 2fr) minmax(9rem, 1fr);
+    }
+}

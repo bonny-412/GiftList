@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { GiftsComponent } from './components/gifts/gifts.component';
 import { LoaderComponent } from './components/loader/loader.component';
@@ -12,26 +11,27 @@ import { ButtonSoundComponent } from './components/button-sound/button-sound.com
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   santaElement!: HTMLElement;
+  private santaInterval?: ReturnType<typeof setInterval>;
   isChristmas:boolean = false;
   isBirthday:boolean = false;
 
   ngOnInit(): void {
     this.checkIfChristmas();
     this.checkIfBirthday();
+  }
 
+  ngAfterViewInit(): void {
     if(this.isChristmas) {
       this.santaElement = document.getElementById('santa')!;
-      this.moveSanta(); // Prima posizione iniziale
-      setInterval(() => this.moveSanta(), 3000); // Cambia posizione ogni 3 secondi
+      this.moveSanta();
+      this.santaInterval = setInterval(() => this.moveSanta(), 3000);
     }
+  }
 
-    if(this.isBirthday) {
-      // this.santaElement = document.getElementById('santa')!;
-      // this.moveSanta(); // Prima posizione iniziale
-      // setInterval(() => this.moveSanta(), 3000); // Cambia posizione ogni 3 secondi
-    }
+  ngOnDestroy(): void {
+    clearInterval(this.santaInterval);
   }
 
   moveSanta(): void {
@@ -40,13 +40,12 @@ export class AppComponent implements OnInit {
   }
 
   getRandomPosition(): { x: number; y: number } {
-    const windowWidth = window.innerWidth;
-    const windowHeight = window.innerHeight;
+    const header = this.santaElement.parentElement!;
     const santaWidth = this.santaElement.offsetWidth;
     const santaHeight = this.santaElement.offsetHeight;
 
-    const x = Math.random() * (windowWidth - santaWidth);
-    const y = Math.random() * (windowHeight - santaHeight);
+    const x = Math.random() * Math.max(0, header.clientWidth - santaWidth);
+    const y = Math.random() * Math.max(0, header.clientHeight - santaHeight);
 
     return { x, y };
   }

@@ -81,5 +81,45 @@ export function getAllGifts(): GiftBean[] {
             dateInsert: '2026-11-16 14:01:00',
             note: ''
         },
+        {
+            title: 'Specchietti',
+            url: 'https://www.urbanobruni.it/it/retrovisori-e-manopole/specchi-retrovisori/specchi-retrovisori-bar-end-ghost-ultra-flat/',
+            img: 'specchietti.png',
+            color: '',
+            size: '',
+            isDisabled: false,
+            dateInsert: '2026-11-25 10:24:00',
+            note: 'Non sapendo cos\'altro mettere...'
+        },
+        {
+            title: 'Mtech jeans',
+            url: 'https://www.wheelup.it/jeans-da-moto-dynoforce-aa-nero.html?_gl=1*ec9y95*_up*MQ..&gbraid=0AAAAAC4p4IcNJMKZZzjiyKrdPpjYvO4TB',
+            img: 'mtech-jeans.png',
+            color: '',
+            size: 'Boh',
+            isDisabled: false,
+            dateInsert: '2026-11-25 10:50:00',
+            note: ''
+        },
+        {
+            title: 'MyRide pantalone',
+            url: 'https://www.wheelup.it/pantaloni-neoshield-elements-series-nero-nero.html?_gl=1*ec9y95*_up*MQ..&gbraid=0AAAAAC4p4IcNJMKZZzjiyKrdPpjYvO4TB',
+            img: 'myride-pantalone.png',
+            color: '',
+            size: '2XL',
+            isDisabled: false,
+            dateInsert: '2026-11-25 11:00:00',
+            note: ''
+        },
+        {
+            title: 'Mtech pantalone',
+            url: 'https://www.wheelup.it/pantaloni-da-moto-rampage-air-windproof-nero-nero-bianco.html?_gl=1*ec9y95*_up*MQ..&gbraid=0AAAAAC4p4IcNJMKZZzjiyKrdPpjYvO4TB',
+            img: 'mtech-pantalone.png',
+            color: '',
+            size: '2XL',
+            isDisabled: false,
+            dateInsert: '2026-11-25 11:03:00',
+            note: ''
+        },
     ]
 }

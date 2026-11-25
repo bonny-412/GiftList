@@ -3,44 +3,69 @@
 @tailwind utilities;
 
 :root {
-	--color-red: #B80321;
-	--color-red-dark: #A4031E;
-
-	--color-green: #179d82;
-	--color-green-dark: #0c5445;
+    --color-red: #B80321;
+    --color-red-dark: #A4031E;
+    --color-green: #179d82;
+    --color-green-dark: #0c5445;
+    --color-pine: #203c34;
+    --color-ivory: #fbf7ef;
+    scrollbar-color: var(--color-red) var(--color-ivory);
 }
 
-body,html {
-	height:100%;
-	width:100%
-}
 body {
-	font-family:Muli,Helvetica,Arial,sans-serif;
-	webkit-tap-highlight-color:#222;
-    color:#999;
-    margin: 0px;;
-}
-
-::-webkit-scrollbar {
-	width: 5px;
-	height: 8px;
-	background-color: #2F2C3D;
-}
-
-::-webkit-scrollbar-thumb {
-	background: var(--color-red);
-	border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	cursor: pointer;
-	background-color: var(--color-red-dark);
+    margin: 0;
+    background: var(--color-ivory);
+    color: var(--color-pine);
+    font-family: Muli, Helvetica, Arial, sans-serif;
 }
 
 .font-christmas {
-    font-family: Great Vibes;
+    font-family: "Great Vibes", cursive;
 }
 
-.bg-primary-color {
-	border-color: var(--color-red) !important;
+:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+.gift-bow {
+    position: absolute;
+    top: -1.0625rem;
+    left: 50%;
+    z-index: 1;
+    width: 2.75rem;
+    height: 1.875rem;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.gift-bow::before,
+.gift-bow::after {
+    position: absolute;
+    top: .125rem;
+    width: 1.35rem;
+    height: .8rem;
+    border: .2rem solid var(--color-red);
+    background: var(--color-ivory);
+    content: "";
+}
+
+.gift-bow::before {
+    left: .06rem;
+    border-radius: 65% 45% 25% 65%;
+    transform: rotate(26deg);
+}
+
+.gift-bow::after {
+    right: .06rem;
+    border-radius: 45% 65% 65% 25%;
+    transform: rotate(-26deg);
+}
+
+.gift-bow span {
+    position: absolute;
+    inset: .65rem .45rem 0;
+    z-index: 1;
+    background: var(--color-red);
+    clip-path: polygon(38% 0, 62% 0, 100% 100%, 76% 82%, 63% 98%, 50% 39%, 37% 98%, 24% 82%, 0 100%);
 }
