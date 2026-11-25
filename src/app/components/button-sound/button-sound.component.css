@@ -31,3 +31,34 @@
     margin-top: .35rem;
     font-size: .875rem;
 }
+
+@media (max-width: 36rem) {
+    :host {
+        position: absolute;
+        top: .75rem;
+        right: 0;
+        z-index: 1;
+        margin-top: 0;
+        text-align: right;
+    }
+
+    .music-button {
+        justify-content: center;
+        width: 2.75rem;
+        padding: 0;
+    }
+
+    .music-button span {
+        display: none;
+    }
+
+    .music-button[aria-pressed="true"] {
+        background: #6a542f;
+    }
+
+    .music-error {
+        padding: .35rem .5rem;
+        border-radius: .4rem;
+        background: #142e27;
+    }
+}

@@ -5,6 +5,7 @@ export interface GiftBean {
     color:string,
     size:string,
     note?:string,
+    isContribution?: boolean,
     isDisabled:boolean,
     dateInsert:string
 }
@@ -13,6 +14,7 @@ export function getAllGifts(): GiftBean[] {
     return [
         {
             title: 'Bonifico PayPal',
+            isContribution: true,
             url: 'https://regali-bonny.netlify.app/assets/images-gift/paypal.png',
             img: 'paypal.png',
             color: '',

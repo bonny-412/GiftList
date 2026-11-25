@@ -12,7 +12,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './gifts.component.css'
 })
 export class GiftsComponent implements OnInit {
-  listGifts:GiftBean[] = getAllGifts();
+  private readonly allGifts = getAllGifts();
+  readonly contribution = this.allGifts.find(gift => gift.isContribution && !gift.isDisabled);
+  listGifts:GiftBean[] = this.allGifts.filter(gift => !gift.isContribution);
   filteredList:GiftBean[] = [];
   
   typeSortRecipes:number = 3;

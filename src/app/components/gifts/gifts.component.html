@@ -41,3 +41,19 @@
     </div>
   }
 </div>
+
+@if (contribution; as paypal) {
+  <section class="contribution" aria-labelledby="contribution-title">
+    <img [src]="'assets/images-gift/' + paypal.img" alt="Codice QR per contribuire con PayPal" loading="lazy">
+    <div>
+      <h3 id="contribution-title">Preferisci un contributo?</h3>
+      @if (paypal.note) {
+        <p>{{ paypal.note }}</p>
+      }
+      <a [href]="paypal.url" target="_blank" rel="noopener" aria-label="Apri il QR PayPal in una nuova scheda">
+        Apri il QR PayPal
+        <span class="qr-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      </a>
+    </div>
+  </section>
+}

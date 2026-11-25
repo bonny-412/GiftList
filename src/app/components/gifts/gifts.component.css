@@ -85,6 +85,69 @@ input {
     color: var(--color-red-dark);
 }
 
+.contribution {
+    display: grid;
+    grid-template-columns: clamp(4.25rem, 19vw, 8rem) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(.75rem, 3vw, 1.5rem);
+    margin-top: 1.5rem;
+    padding: clamp(.75rem, 3vw, 1.5rem);
+    border: 1px solid #d5bd95;
+    border-radius: 1rem;
+    background: #f8f1e5;
+}
+
+.contribution img {
+    width: 100%;
+    border-radius: .5rem;
+    background: white;
+}
+
+.contribution h3 {
+    font-size: 1.1rem;
+    font-weight: 750;
+}
+
+.contribution p {
+    margin-top: .2rem;
+    font-size: .875rem;
+}
+
+.contribution a {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    min-height: 2.75rem;
+    font-size: .875rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.qr-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    width: .85rem;
+    height: .85rem;
+    flex: none;
+}
+
+.qr-icon i {
+    border: 1px solid currentColor;
+}
+
+.qr-icon i:last-child {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+@media (min-width: 380px) and (max-width: 36rem) {
+    .gift-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: .65rem;
+    }
+}
+
 @media (min-width: 36rem) {
     .gift-toolbar {
         grid-template-columns: minmax(0, 2fr) minmax(9rem, 1fr);

@@ -23,7 +23,8 @@
       } @else {
         <a class="product-link" [href]="giftBean.url" target="_blank" rel="noopener"
           [attr.aria-label]="'Vedi prodotto: ' + giftBean.title + ' (si apre in una nuova scheda)'">
-          Vedi prodotto <span aria-hidden="true">↗</span>
+          Vedi prodotto
+          <span class="gift-icon" aria-hidden="true"></span>
         </a>
       }
     </div>
